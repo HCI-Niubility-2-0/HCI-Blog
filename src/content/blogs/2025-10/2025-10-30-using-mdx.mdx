@@ -1,0 +1,32 @@
+---
+title: "Using MDX for blog posts"
+description: "A short demo post showing MDX usage in this Astro blog"
+pubDate: 2025-10-30
+updatedDate: 2025-10-30
+tags:
+  - mdx
+  - demo
+---
+
+import CustomNote from "../../../../components/knowledge-card/CardFront.astro";
+
+# Hello MDX
+
+This is an example MDX blog post. You can use standard Markdown syntax plus JSX/MDX imports.
+
+<CustomNote />
+
+Here's a React-style JSX snippet (if you import a React component):
+
+```jsx
+// In MDX you can import React components then use them directly
+import MyButton from "../../../components/ui/button";
+
+<MyButton>Click me</MyButton>
+```
+
+You can also embed raw HTML:
+
+<button onclick="alert('This is plain HTML; for interactive React components import them instead')">Plain HTML button</button>
+
+Enjoy writing with MDX!
